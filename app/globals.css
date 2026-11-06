@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Colour tokens. Light values first, dark values below. */
+:root {
+  --paper: #f4f6f9;
+  --panel: #ffffff;
+  --ink: #18212f;
+  --muted: #5b6779;
+  --line: #d5dce6;
+  --accent: #2650d9;
+  --won: #19764a;
+  --lost: #b13c48;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f141d;
+    --panel: #171e2a;
+    --ink: #e5e9f0;
+    --muted: #97a3b6;
+    --line: #2b3546;
+    --accent: #7d9bff;
+    --won: #5cc893;
+    --lost: #f0808b;
+  }
+}
+
+/* Lets us write classes like bg-paper, text-ink, border-line. */
+@theme inline {
+  --color-paper: var(--paper);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-won: var(--won);
+  --color-lost: var(--lost);
+  --font-sans: "Bricolage Grotesque Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
