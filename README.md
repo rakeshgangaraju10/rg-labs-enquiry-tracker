@@ -4,7 +4,7 @@ A small web app I use to track client enquiries for RG Labs, my web design and A
 
 ![Screenshot of the enquiry tracker](docs/screenshot.png)
 
-**Live demo:** _add your Netlify link here_
+**Live demo:** https://rg-labs-enquiries.netlify.app
 
 ## What it does
 
